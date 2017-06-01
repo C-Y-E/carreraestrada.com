@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/C-Y-E/cye.com.svg?branch=master)](https://travis-ci.org/C-Y-E/cye.com)
+[![Build Status](https://travis-ci.org/C-Y-E/cye.com.svg?branch=master)](https://travis-ci.org/C-Y-E/cye.com) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4895b489148748c990da54f258efb777)](https://www.codacy.com/app/C-Y-E/cye.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=C-Y-E/cye.com&amp;utm_campaign=Badge_Grade)
 
 # cye.com
 
