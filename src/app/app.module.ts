@@ -1,28 +1,11 @@
-import Rollbar = require('rollbar');
+import * as Rollbar from 'rollbar';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, ErrorHandler, Injectable, Injector } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { RollbarErrorHandler, useFactory } from './rollbar/rollbar.error.handler';
 import { AppComponent } from './app.component';
-
-const rollbarConfig = {
-  accessToken: 'c06b4919cc0d49ee813c235131c50cb5',
-  captureUncaught: true,
-  captureUnhandledRejections: true,
-  payload: {
-    environment: 'staging'
-  }
-};
-
-@Injectable()
-export class RollbarErrorHandler implements ErrorHandler {
-  constructor(private injector: Injector) { }
-  handleError(err: any): void {
-    const rollbar = this.injector.get(Rollbar);
-    rollbar.error(err.originalError || err);
-  }
-}
 
 @NgModule({
   declarations: [
@@ -35,11 +18,8 @@ export class RollbarErrorHandler implements ErrorHandler {
   ],
   providers: [
     { provide: ErrorHandler, useClass: RollbarErrorHandler },
-    { provide: Rollbar,
-      useFactory: () => {
-        return new Rollbar(rollbarConfig);
-      }
-    }],
+    { provide: Rollbar, useFactory },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
