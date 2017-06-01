@@ -11,7 +11,7 @@ const rollbarConfig = {
   captureUncaught: true,
   captureUnhandledRejections: true,
   payload: {
-    environment: 'development'
+    environment: 'staging'
   }
 };
 
