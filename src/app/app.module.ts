@@ -6,15 +6,17 @@ import { HttpModule } from '@angular/http';
 
 import { RollbarErrorHandler, useFactory } from './rollbar/rollbar.error.handler';
 import { AppComponent } from './app.component';
+import { HeaderModule } from './header/header.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    HeaderModule
   ],
   providers: [
     { provide: ErrorHandler, useClass: RollbarErrorHandler },
