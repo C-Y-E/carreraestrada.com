@@ -1,11 +1,18 @@
+@import 'sass/variables';
 /* You can add global styles to this file, and also import other style files */
-app-root {
-  display: grid;
-  grid-template: 100% 100% 100% / 1fr;
+html,
+body {
+  background-color: $light-1;
+  color: $dark-1;
+  font: {
+    family: $font-main;
+    size: 16px;
+  }
+  position: relative;
+  text-rendering: optimizeLegibility;
 }
 
-app-header {
-  grid-area: 1 / 1 / 1 / -1;
-  /* needed for the floated layout */
-  clear: both;
+a {
+  color: $blue-3;
+  text-decoration: none;
 }

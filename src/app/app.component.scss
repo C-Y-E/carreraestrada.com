@@ -1,0 +1,8 @@
+@import './../sass/variables';
+
+.header {
+    border-bottom: 1px solid $light-2;
+    box-shadow: $box-shadow;
+    display: block;
+    width: 100%;
+}
