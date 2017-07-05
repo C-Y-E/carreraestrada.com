@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+app-root {
+  display: grid;
+  grid-template: 100% 100% 100% / 1fr;
+}
+
+app-header {
+  grid-area: 1 / 1 / 1 / -1;
+  /* needed for the floated layout */
+  clear: both;
+}

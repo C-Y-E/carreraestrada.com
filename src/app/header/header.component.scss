@@ -1,0 +1,15 @@
+header {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  height: 50px;
+
+  a {
+    height: 100%;
+    img {
+        height: 100%;
+    }
+  }
+}
