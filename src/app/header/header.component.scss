@@ -20,6 +20,7 @@
 
   .nav-main {
     grid-area: 'nav';
+    overflow: hidden;
     width: 100%;
   }
 }
@@ -31,6 +32,7 @@
   flex-flow: row nowrap;
   justify-content: flex-end;
   list-style: none;
+  white-space: nowrap;
 
   li {
     display: list-item;
@@ -48,18 +50,19 @@
   }
 }
 
-@media (max-width: 625px) {
+@media (max-width: 680px) {
   .main-header {
-    grid-template: 60px 60px /  100%;
+    grid-template: 60px 30px /  100%;
     grid-template-areas: "brand" "nav";
-    height: 120px;
+    height: 90px;
   }
 
   .nav-list {
     align-items: stretch;
-    flex-flow: row wrap;
-    justify-content: center;
+    height: 130%;
+    justify-content: flex-start;
     margin: 0;
+    overflow-y: auto;
     padding: 0;
 
     li {
