@@ -9,7 +9,8 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "favicon.ico",
+        { "glob": "sprite.octicons.svg", "input": "../node_modules/octicons/build/", "output": "./" }
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -19,6 +20,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../node_modules/octicons/build/octicons.min.css",
         "styles.scss"
       ],
       "scripts": [],

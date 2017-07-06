@@ -25,6 +25,8 @@
 }
 
 .nav-list {
+  align-content: center;
+  align-items: center;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
@@ -40,9 +42,15 @@
   }
 }
 
+.nav-link {
+  .octicon {
+    vertical-align: text-bottom;
+  }
+}
+
 @media (max-width: 625px) {
   .main-header {
-    grid-template: 60px 100% /  100%;
+    grid-template: 60px 60px /  100%;
     grid-template-areas: "brand" "nav";
     height: 120px;
   }
