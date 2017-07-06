@@ -10,13 +10,12 @@
   width: 100%;
 
   .brand  {
+    background-image: url('/assets/brand/cye-logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
     display: inline-block;
     grid-area: 'brand';
     width: 100%;
-    img {
-      height: 100%;
-      width: 100%;
-    }
   }
 
   .nav-main {
