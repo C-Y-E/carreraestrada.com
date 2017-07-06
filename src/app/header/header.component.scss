@@ -60,7 +60,7 @@
   .nav-list {
     align-items: stretch;
     height: 130%;
-    justify-content: flex-start;
+    justify-content: center;
     margin: 0;
     overflow-y: auto;
     padding: 0;
@@ -76,8 +76,8 @@
   }
 }
 
-// @media (max-width: 494px) {
-//   .nav-list {
-//     justify-content: flex-start;
-//   }
-// }
+@media (max-width: 496px) {
+  .nav-list {
+    justify-content: flex-start;
+  }
+}
