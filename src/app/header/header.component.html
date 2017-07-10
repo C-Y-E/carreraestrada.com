@@ -3,8 +3,8 @@
   </a>
   <nav class="nav-main">
     <ul class="nav-list">
-      <li>
-        <a class="nav-link" href="javascript:void(0)">
+      <li ngbDropdown #productsDropdown="ngbDropdown">
+        <a class="nav-link" href="javascript:void(0)" ngbDropdownToggle>
           Productos
           <span class="octicon">
             <svg version="1.1" width="14" height="14" viewBox="0 0  14 14" class="octicon" aria-hidden="true">
@@ -27,8 +27,18 @@
         <a class="nav-link" href="javascript:void(0)">Nosotros</a>
       </li>
       <li>
-        <a class="nav-link" href="javascript:void(0)">Contactanos</a>
+        <a class="nav-link" href="javascript:void(0)">Contáctanos</a>
       </li>
     </ul>
   </nav>
 </header>
+
+<div *ngIf="productsDropdown.isOpen()" class="dropdown-menu products">
+  <a class="dropdown-item">
+    <span class="octicon">
+      <svg version="1.1" width="30" height="30" viewBox="0 0  30 30" class="octicon" aria-hidden="true">
+        <use xlink:href="logo.svg#poscye-icon"></use>
+      </svg>
+    </span> ERP / Poscye
+  </a>
+</div>

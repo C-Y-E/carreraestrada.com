@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { HeaderModule } from './header/header.module';
@@ -15,7 +16,8 @@ import { HeaderModule } from './header/header.module';
     BrowserModule,
     FormsModule,
     HttpModule,
-    HeaderModule
+    HeaderModule,
+    NgbModule.forRoot()
   ],
   providers: [
   ],

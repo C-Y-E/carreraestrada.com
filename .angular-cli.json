@@ -10,7 +10,8 @@
       "assets": [
         "assets",
         "favicon.ico",
-        { "glob": "sprite.octicons.svg", "input": "../node_modules/octicons/build/", "output": "./" }
+        { "glob": "sprite.octicons.svg", "input": "../node_modules/octicons/build/", "output": "./" },
+        { "glob": "logo.svg", "input": "../src/assets/brand/", "output": "./" }
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -20,6 +21,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../node_modules/normalize.css/normalize.css",
         "../node_modules/octicons/build/octicons.min.css",
         "styles.scss"
       ],

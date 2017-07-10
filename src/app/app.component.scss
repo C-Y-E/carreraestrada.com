@@ -4,5 +4,12 @@
     border-bottom: 1px solid $light-2;
     box-shadow: $box-shadow;
     display: block;
+    height: 60px;
     width: 100%;
+}
+
+@media (max-width: 680px) {
+  .header {
+    height: 90px;
+  }
 }
