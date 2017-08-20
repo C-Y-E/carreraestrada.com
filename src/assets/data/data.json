@@ -1,0 +1,42 @@
+{
+    "products": [],
+    "services": [],
+    "customers": [
+        {
+            "name": "l",
+            "img": "",
+            "url": ""
+        }
+    ],
+    "us": {
+        "intro": "Nuestra trayectoria empresarial es el resultado de 22 años de experiencia en el desarrollo de software, desde entonces ha manteniendo un sostenido y vigoroso crecimiento.",
+        "about": [
+            "Somos líderes en el mercado de puntos de venta y sistemas administrativos contables. Con amplia trayectoria en el mercado, excelente experiencia y profesionalismo. Asegurando así la satisfacción de nuestros clientes.",
+            "Desarrollamos el sistema POSCYE el cual es un programa solidó, versátil y de fácil manejo.",
+            "CARRERA ESTRADA & SISTEMAS es integrador de soluciones con otros sistemas ERP de otros fabricantes.",
+            "Tenemos un amplio conocimiento en los sectores de negocios como empresas industriales, comerciales, servicios, distribuidores, entretenimiento, clubs sociales, hoteles, restaurantes, franquicias, almacenes de ropa, licorerías, tiendas de conveniencia, departamentales, supermercados, automotrices, etc."
+        ]
+    },
+    "contact": {
+        "intro": "Nos gusta crear cosas divertidas, conocer grandes personas de ideas afines. no dudes en decirnos hola!",
+        "phones": [
+            {
+                "label": "(2)441-911",
+                "number": "tel:+593-2-244-1911"
+            },
+            {
+                "label": "(2)255-547",
+                "number": "tel:+593-2-225-5547"
+            },
+            {
+                "label": "(2)441-911",
+                "number": "tel:+593-2-227-3556"
+            }
+        ],
+        "map": {
+            "longitude": 2392,
+            "latitude": 32993,
+            "mapicon": "mapicon.png"          
+        }
+    }
+}

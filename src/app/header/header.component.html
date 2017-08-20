@@ -1,6 +1,5 @@
 <header class="main-header">
-  <a class="brand" href="javascript:void(0)">
-  </a>
+  <a class="brand" href="javascript:void(0)"></a>
   <nav class="nav-main">
     <ul class="nav-list">
       <li ngbDropdown #productsDropdown="ngbDropdown">
@@ -31,7 +30,7 @@
       </li>
     </ul>
   </nav>
-  <div *ngIf="productsDropdown.isOpen()" class="dropdown-menu products">
+  <nav *ngIf="productsDropdown.isOpen()" class="dropdown-menu products">
     <a class="dropdown-item">
       <span class="octicon dropdown-icon">
         <svg version="1.1" width="80" height="80" viewBox="0 0  80 80" class="octicon" aria-hidden="true">
@@ -54,7 +53,7 @@
       <div class="dropdown-info">
         <h5>Facturacion Electronica</h5>
         <p>
-          Moderna modalidad de factura digital para procesos administrativos más rápidos y eficientes.
+          Moderna modalidad de factura digital para procesos eficientes.
         </p>
       </div>
     </a>
@@ -71,5 +70,5 @@
         </p>
       </div>
     </a>
-  </div>
+  </nav>
 </header>
