@@ -1,74 +1,18 @@
-<header class="main-header">
-  <a class="brand" href="javascript:void(0)"></a>
-  <nav class="nav-main">
-    <ul class="nav-list">
-      <li ngbDropdown #productsDropdown="ngbDropdown">
-        <a class="nav-link" href="javascript:void(0)" ngbDropdownToggle>
-          Productos
-          <span class="octicon">
-            <svg version="1.1" width="14" height="14" viewBox="0 0  14 14" class="octicon" aria-hidden="true">
-              <use xlink:href="sprite.octicons.svg#chevron-down"></use>
-            </svg>
-          </span>
-        </a>
-      </li>
-      <li>
-        <a class="nav-link" href="javascript:void(0)">
-          Servicios
-          <span class="octicon">
-            <svg version="1.1" width="14" height="14" viewBox="0 0  14 14" class="octicon" aria-hidden="true">
-              <use xlink:href="sprite.octicons.svg#chevron-down"></use>
-            </svg>
-          </span>
-        </a>
-      </li>
-      <li>
-        <a class="nav-link" href="javascript:void(0)">Nosotros</a>
-      </li>
-      <li>
-        <a class="nav-link" href="javascript:void(0)">Contáctanos</a>
-      </li>
-    </ul>
-  </nav>
-  <nav *ngIf="productsDropdown.isOpen()" class="dropdown-menu products">
-    <a class="dropdown-item">
-      <span class="octicon dropdown-icon">
-        <svg version="1.1" width="80" height="80" viewBox="0 0  80 80" class="octicon" aria-hidden="true">
-          <use xlink:href="logo.svg#poscye-icon"></use>
-        </svg>
-      </span>
-      <div class="dropdown-info">
-        <h5>ERP / Poscye</h5>
-        <p>
-          Sistema para la administración de las pequeñas, medianas y grandes empresas.
-        </p>
-      </div>
-    </a>
-    <a class="dropdown-item">
-      <span class="octicon dropdown-icon">
-        <svg version="1.1" width="80" height="80" viewBox="0 0  80 80" class="octicon" aria-hidden="true">
-          <use xlink:href="sprite.octicons.svg#file-symlink-file"></use>
-        </svg>
-      </span>
-      <div class="dropdown-info">
-        <h5>Facturacion Electronica</h5>
-        <p>
-          Moderna modalidad de factura digital para procesos eficientes.
-        </p>
-      </div>
-    </a>
-    <a class="dropdown-item">
-      <span class="octicon dropdown-icon">
-        <svg version="1.1" width="80" height="80" viewBox="0 0  80 80" class="octicon" aria-hidden="true">
-          <use xlink:href="sprite.octicons.svg#server"></use>
-        </svg>
-      </span>
-      <div class="dropdown-info">
-        <h5>Hardware</h5>
-        <p>
-          Equipos especializados para tu negocio.
-        </p>
-      </div>
-    </a>
-  </nav>
-</header>
+<a class="logo" href="javascript:void(0)">
+  <img class="logo-icon" src="assets/img/brand/logo.png" alt="logo">
+  <span class="logo-name"></span>
+</a>
+<nav class="nav">
+  <a class="nav-link" href="javascript:void(0)">
+    Productos
+  </a>
+  <a class="nav-link" href="javascript:void(0)">
+    Servicios
+  </a>
+  <a class="nav-link" href="javascript:void(0)">
+    Nosotros
+  </a>
+  <a class="nav-link" href="javascript:void(0)">
+    Contácto
+  </a>
+</nav>

@@ -1,136 +1,125 @@
-@import './../../sass/variables';
+@import '../../assets/sass/colors';
 
-.main-header {
-  display: grid;
-  grid-template: 60px /  30% 70%;
-  grid-template-areas: "brand nav";
-  height: 60px;
-  margin: 0 auto;
-  max-width: 980px;
-  position: relative;
-  width: 100%;
-
-  .brand  {
-    background-image: url('/assets/brand/cye-logo.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
-    grid-area: 'brand';
-    width: 100%;
-  }
-
-  .nav-main {
-    grid-area: 'nav';
-    overflow: hidden;
-    width: 100%;
-  }
-}
-
-.nav-list {
-  align-content: center;
-  align-items: center;
-  display: flex;
-  flex-flow: row nowrap;
-  height: 100%;
-  justify-content: flex-end;
-  list-style: none;
-  margin: 0 auto;
-  white-space: nowrap;
-
-  li {
-    display: list-item;
-    text-align: center;
-
-    .nav-link {
-      padding: .5em 1em;
-    }
-  }
-}
-
-.nav-link {
-  .octicon {
-    vertical-align: text-bottom;
-  }
-}
-
-.dropdown-menu {
-  background-color: rgba(255, 255, 255, .8);
-  background-clip: padding-box;
-  border: 1px solid rgba(27, 31, 35, 0.15);
-  border-radius: 3px;
-  display: flex;
-  flex-flow: row wrap;
-  margin: 0.125rem auto;
-  max-width: 980px;
-  min-width: 10rem;
-  justify-content: flex-start;
-  left: 0;
-  padding: 0.5rem 0;
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  z-index: 1000;
-
-  &::before {
-    filter: blur(5px);
-    opacity: 0.8;
-  }
-
-  .dropdown-item {
-    cursor: pointer;
+:host {
+    align-items: center;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    margin: 5px auto;
-  }
-}
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 56px;
+    padding: 0 1.3333333333333333rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: transform .3s ease-out, background-color .3s ease-out, -webkit-transform .3s ease-out;
 
-.dropdown-icon,
-.dropdown-info {
-  display: inline-block;
-}
-
-.dropdown-info {
-  h5,
-  p {
-    margin: 0;
-    padding: 0;
-  }
-  p {
-    font-size: 0.8rem;
-    max-width: 150px;
-    text-align: left;
-  }
-}
-
-@media (max-width: 680px) {
-  .main-header {
-    grid-template: 60px 30px /  100%;
-    grid-template-areas: "brand" "nav";
-    height: 90px;
-  }
-
-  .nav-list {
-    align-items: stretch;
-    height: 130%;
-    justify-content: center;
-    margin: 0;
-    overflow-y: auto;
-    padding: 0;
-
-    li {
-      padding: .15em;
+    .logo {
+        align-items: center;
+        border: 0;
+        color: rgba(117,117,117,0.8);
+        display: flex;
+        flex-flow: row nowrap;
+        font-size: 0.8rem;
+        height: inherit;
+        justify-content: flex-start;
+        line-height: inherit;
+        padding: 0 1.5rem;
+        text-transform: uppercase;
+        &-icon {
+            height: 40px;
+        }
+        &-name {
+            display: inline-table;
+            text-align: center;
+            font-weight: bold;
+            &::before {
+                content: 'CARRERA ESTRADA & SISTEMAS';
+            }
+        }
     }
-  }
-
-  .nav-link {
-    text-align: center;
-    vertical-align: middle;
-  }
+    
+    .nav {
+        display: flex;
+        flex-grow: 1;
+        height: inherit;
+        justify-content: flex-end;
+        line-height: inherit;
+        &-link {
+            color: $blue-2;
+            font-weight: 500;
+            font-size: 0.87rem;
+            letter-spacing: 1px;
+            line-height: 56px;
+            padding-left: 1.125rem;
+            padding-right: 1.125rem;
+            text-transform: uppercase;
+            word-spacing: 2px;
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                background: $light-2;
+                transition: width .3s;
+            }
+            &:hover {
+                color: $blue-2;
+            }
+            &:hover::after {
+                width: 100%;
+                transition: width .3s;
+            }
+        }
+    }
 }
-
-@media (max-width: 496px) {
-  .nav-list {
-    justify-content: flex-start;
-  }
+@media (max-width: 575.98px) {
+    :host {
+        .nav {
+            &-link {
+                font-size: .4rem;
+            }
+        }
+    }
+}
+@media (min-width: 576px) {
+    :host {
+        .logo {
+            padding: 0;
+        }
+        .nav {
+            &-link {
+                font-size: .6rem;
+                padding-left: .6rem;
+                padding-right: .6rem;
+                word-spacing: 0;
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+    :host {
+        padding-top: 0.5rem;
+        .logo {
+            &-name {
+                &::before {
+                    content: '';
+                } 
+            }
+        }
+    }
+}
+@media (min-width: 992px){
+    :host {
+        .nav {
+            justify-content: center;
+            &-link {
+                font-size: .8rem;
+                padding-left: .8rem;
+                padding-right: .8rem;
+                word-spacing: 0;
+            }
+        }
+    }
 }
