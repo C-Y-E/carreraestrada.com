@@ -1,0 +1,228 @@
+{
+    "products": [
+        {
+            "name": "Poscye ERP",
+            "description": "Sistema ERP desarrollado principalmente para la administración de las pequeñas, medianas y grandes empresas.",
+            "characteristics": [
+                {
+                    "module": "Compras",
+                    "image": "poscye-compras.png",
+                    "features": [
+                        "Registra las adquisiciones que hace la empresa.",
+                        "Almacena la información del proveedor.",
+                        "Alimenta los inventarios.",
+                        "Ingresa la información para el ATS.",
+                        "Genera cartera por pagar.",
+                        "Imprime retenciones y contabiliza.",
+                        "Ingresar los pedidos a proveedores en base los máximos y mínimos.",
+                        "Maneja las devoluciones de mercadería y los descuentos que el proveedor otorga.",
+                        "Las compras pueden ser de inventarios, gasto o servicio y activo fijo."
+                    ] 
+                },
+                {
+                    "module": "Ventas",
+                    "image": "poscye-ventas.png",
+                    "features": [
+                        "Registra las facturas de ventas y las notas de crédito.",
+                        "Almacena la información de clientes.",
+                        "Manejo de cajeros y vendedores.",
+                        "Realizar proformas, pedidos de ventas, notas de crédito y debito monetarias.",
+                        "Arqueo de caja.",
+                        "Retiros e ingreso de dinero.",
+                        "Genera recaps."
+                    ] 
+                },
+                {
+                    "module": "Cartera",
+                    "image": "poscye-cartera.png",
+                    "features": [
+                        "Control de la cartera por cobrar y cartera por pagar.",
+                        "Maneja la cartera de las tarjetas de crédito y cheques posfechados."
+                    ] 
+                },
+                {
+                    "module": "Inventario",
+                    "image": "poscye-inventario.png",
+                    "features": [
+                        "El sistema POSCYE controla los inventarios.",
+                        "Alimente en línea con los ingresos y egresos que el sistema acepta.",
+                        "Soporta registro de inventarios físico sacando diferencias de inventario y ajustando automáticamente.",
+                        "Tipos de inventario por marca, departamento, categoría, producto, proveedor, total.",
+                        "Manejo de n-bodegas."
+                    ] 
+                },
+                {
+                    "module": "Producción",
+                    "image": "poscye-produccion.png",
+                    "features": [
+                        "Acepta el manejo de las ordenes de producción.",
+                        "Genera producción costeada en base a una orden de producción o una receta."
+                    ] 
+                },
+                {
+                    "module": "Contabilidad",
+                    "image": "poscye-contabilidad.png",
+                    "features": [
+                        "Almacena el plan de cuentas de la empresa.",
+                        "Los diarios contables se alimenta de los diferentes módulos del sistema.",
+                        "Obtiene balances de situación y de resultados.",
+                        "Maneja centro de costos y flujo de caja."
+                    ] 
+                },
+                {
+                    "module": "Bancos",
+                    "image": "poscye-bancos.png",
+                    "features": [
+                        "Administra y define las cuentas bancarias.",
+                        "Registra los cheques descargando la cartera por pagar.",
+                        "Ingreso las notas de crédito, debito y deposito bancarios.",
+                        "Cuenta con un libro de bancos.",
+                        "Conciliación bancaria."
+                    ] 
+                },
+                {
+                    "module": "Rol de Pagos",
+                    "image": "poscye-roldepagos.png",
+                    "features": [
+                        "Almacena los datos personales del empleado.",
+                        "Carga los descuentos, ingresos y horas extras.",
+                        "Calcula el impuesto a la renta y el aporte al IESS.",
+                        "Provisionar los fondos de reserva, los decimos tercero y cuarto sueldo.",
+                        "Realiza liquidaciones del personal."
+                    ] 
+                },
+                {
+                    "module": "Activo Fijo",
+                    "image": "poscye-activofijo.png",
+                    "features": [
+                        "Permite el registro de los bienes de la empresa.",
+                        "Control de la vida útil de la compania.",
+                        "Registrar los asientos de depreciación."
+                    ] 
+                }
+            ]
+        },
+        {
+            "name": "Facturacion Electronica",
+            "description": "Moderna modalidad de factura digital para procesos administrativos más rápidos y eficientes.",
+            "characteristics": [
+                {
+                    "module": "Comprobante Electrónico",
+                    "image": "invoice-ce.png",
+                    "description": [
+                        "Un comprobante electrónico es un documento que cumple con los requisitos legales y reglamentarios exigibles para todos comprobantes de venta, garantizando la autenticidad de su origen y la integridad de su contenido.",
+                        "Un comprobante electrónico tendrá validez legal siempre que contenga una firma electrónica."
+                    ], 
+                    "features": [
+                        "Facturas",
+                        "Notas de crédito",
+                        "Notas de débito",
+                        "Comprobantes de retención",
+                        "Guías de remisión"
+                    ] 
+                },
+                {
+                    "module": "Portal de Consulta",
+                    "image": "invoice-pc.png",
+                    "features": [
+                        "Portal Interno para consulta, descarga y visualización de los documentos.",
+                        "Portal Externo de consulta y descarga para clientes.",
+                        "Consultar las facturas a un receptor diseñado nunca ha sido tan rápido y fácil."
+                    ] 
+                },
+                {
+                    "module": "Beneficios",
+                    "image": "invoice-beneficios.png",
+                    "features": [
+                        "Tiene la misma validez que los documentos físicos.",
+                        "Reducción de tiempos de envío de comprobantes.",
+                        "Ahorro en el gasto de papelería física y su archivo.",
+                        "Contribuye al medio ambiente, debido al ahorro de papel y tintas de impresión.",
+                        "Mayor seguridad en el resguardo de los documentos.",
+                        "Menor probabilidad de falsificación.",
+                        "Procesos administrativos más rápidos y eficientes."
+                    ] 
+                }
+            ]
+        },
+        {
+            "name": "Hardware",
+            "description": "Impresoras para puntos de venta, impresoras de código de barra, lectores de código de barra, Touchscreen all in one, colectores de datos, Kioskos.",
+            "products": [
+                {
+                    
+                }
+            ]
+        }
+    ],
+    "services": [
+        {
+            "name": "Desarrollo de Paginas Web",
+            "characteristics": [
+                "Utilizamos la mejor tecnología.",
+                "Adaptable a cualquier tamaño de pantalla.",
+                "Optimizado para móviles.",
+                "Manejador de contenido.",
+                "Desarrollo interactivo para todas las necesidades del cliente."
+            ],
+            "main-image": "devwebsite.png"
+        },
+        {
+            "name": "Apps Móviles",
+            "characteristics": [
+                "Estrategia de aplicaciones móviles.",
+                "Diseño de aplicaciones para móviles.",
+                "Desarrollo de aplicaciones móviles para iOS & Android."
+            ],
+            "main-image": "appmoviles.png"
+        },
+        {
+            "name": "Márketing Digital",
+            "characteristics": [
+                "SEO Optimización en motores de búsqueda.",
+                "Manejo en redes sociales.",
+                "Pay-Per-Click Marketing.",
+                "Email Marketing."
+            ],
+            "main-image": "digitalmarketing.png"
+        }
+    ],
+    "customers": [
+        {
+            "name": "l",
+            "img": "",
+            "url": ""
+        }
+    ],
+    "us": {
+        "intro": "Nuestra trayectoria empresarial es el resultado de 22 años de experiencia en el desarrollo de software, desde entonces ha manteniendo un sostenido y vigoroso crecimiento.",
+        "about": [
+            "Somos líderes en el mercado de puntos de venta y sistemas administrativos contables. Con amplia trayectoria en el mercado, excelente experiencia y profesionalismo. Asegurando así la satisfacción de nuestros clientes.",
+            "Desarrollamos el sistema POSCYE el cual es un programa solidó, versátil y de fácil manejo.",
+            "CARRERA ESTRADA & SISTEMAS es integrador de soluciones con otros sistemas ERP de otros fabricantes.",
+            "Tenemos un amplio conocimiento en los sectores de negocios como empresas industriales, comerciales, servicios, distribuidores, entretenimiento, clubs sociales, hoteles, restaurantes, franquicias, almacenes de ropa, licorerías, tiendas de conveniencia, departamentales, supermercados, automotrices, etc."
+        ]
+    },
+    "contact": {
+        "intro": "Nos gusta crear cosas divertidas, conocer grandes personas de ideas afines. no dudes en decirnos hola!",
+        "phones": [
+            {
+                "label": "(2)441-911",
+                "number": "tel:+593-2-244-1911"
+            },
+            {
+                "label": "(2)255-547",
+                "number": "tel:+593-2-225-5547"
+            },
+            {
+                "label": "(2)441-911",
+                "number": "tel:+593-2-227-3556"
+            }
+        ],
+        "map": {
+            "longitude": 2392,
+            "latitude": 32993,
+            "mapicon": "mapicon.png"          
+        }
+    }
+}
