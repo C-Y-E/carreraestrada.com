@@ -45,7 +45,7 @@
             filter: blur(0);
             opacity: 1;
             border-bottom: solid 2px rgba(255, 255, 255, 0.125);
-            font-size: 2.25em;
+            font-size: 1.2rem;
             margin-bottom: 0.8em;
             padding-bottom: 0.4em;
             text-transform: uppercase;
@@ -58,7 +58,7 @@
             filter: blur(0);
             opacity: 1;
             font-family: Raleway, Helvetica, sans-serif;
-            font-size: 1em;
+            font-size: .75rem;
             font-weight: 200;
             letter-spacing: 0.1em;
             line-height: 2;
@@ -66,27 +66,50 @@
         }
     }
 }
-@media (min-width: 375px) {
+@media (min-width: 425px) {
     :host {
-        
     }
 }
 @media (min-width: 576px) {
     :host {
-        
+        .inner {
+            h1 {
+                font-size: 1.35rem;
+            }
+            p {
+                font-size: .78rem;
+            }
+        }
     }
 }
 @media (min-width: 768px) {
     :host {
         height: 60vh;
+        .inner {
+            h1 {
+                font-size: 1.75rem;
+            }
+            p {
+                font-size: .8rem;
+            }
+        }
     }
 }
-@media (min-width: 992px){
-    .host {
-        padding: 1.25rem;
+@media (min-width: 992px) {
+    :host {
+        .inner {
+            h1 {
+                font-size: 1.9rem;
+            }
+        }
     }
 }
 @media (min-width: 1200px) {
-    .host {
+    :host {
+        .inner {
+            h1 {
+                font-size: 2.25rem;
+            }
+        }
     }
 }

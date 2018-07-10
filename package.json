@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prepages": "ng build --prod --base-href 'https://pablocarreraest.github.io/cye.com/'",
+    "pages": "ngh --dir='dist/cye' --message='🚀'"
   },
   "private": true,
   "dependencies": {
