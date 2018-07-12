@@ -1,0 +1,105 @@
+@import '../../sass/variables';
+@import '../../sass/colors';
+
+:host {
+    display: block;
+    align-items: baseline;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin: 0 auto;
+    text-align: center;
+    article {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        height: 40vh;
+        position: relative;
+        width: 100%;
+        &::before {
+            content: '';
+            display: block;
+            height: 100%;
+            opacity: .85;
+            position: absolute;
+            width: 100%;
+            z-index: 2;
+        }
+        header {
+            color: $white;
+            position: relative;
+            z-index: 3;
+            h3 {
+                line-height: 1.65;
+                margin-bottom: 0;
+                &:after {
+                    content: '';
+                    background-color: $white-b;
+                    display: block;
+                    height: 2px;
+                    margin: 0.325em auto 0.5em auto;
+                    max-width: 250px;
+                }
+            }
+            p {
+                letter-spacing: 0.1em
+            }
+        }
+    }
+    .poscye {
+        background-image: url('https://squareup.com/assets/pages/blog/hero.medium-5d2608ae71fb1fd0bf8f98b94c13e6bdfdd9496c01cea7dc3ad7625b72422c36.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        &::before {
+            background: $matching-1;
+        }
+    }
+    .fe {
+        background-image: url('https://images.pexels.com/photos/192136/pexels-photo-192136.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        &::before {
+            background: $spot-1;
+        }
+    }
+    .ss {
+        background-image: url('/assets/img/bk/sales.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        &::before {
+            background: $spot-1;
+        }
+    }
+}
+@media (min-width: 425px) {
+    :host {
+    }
+}
+@media (min-width: 576px) {
+    :host {
+        .poscye {
+            width: 60%;
+        }
+        .fe {
+            width: 40%;
+        }
+        .ss {
+            width: 40%;
+        }
+    }
+}
+@media (min-width: 768px) {
+    :host {
+    }
+}
+@media (min-width: 992px) {
+    :host {
+    }
+}
+@media (min-width: 1200px) {
+    :host {
+    }
+}

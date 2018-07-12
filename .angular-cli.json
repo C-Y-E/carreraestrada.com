@@ -10,9 +10,8 @@
       "assets": [
         "assets",
         "favicon.ico",
-        { "glob": "sprite.octicons.svg", "input": "../node_modules/octicons/build/", "output": "./" },
-        { "glob": "logo.svg", "input": "../src/assets/brand/", "output": "./" },
-        { "glob": "**/*", "input": "assets/icons/", "output": "./" }
+        { "glob": "**/*", "input": "icons/", "output": "./" },
+        { "glob": "sprite.octicons.svg", "input": "../node_modules/octicons/build/", "output": "./" }
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -23,10 +22,12 @@
       "prefix": "app",
       "styles": [
         "../node_modules/normalize.css/normalize.css",
-        "../node_modules/octicons/build/octicons.min.css",
         "styles.scss"
       ],
-      "scripts": [],
+      "scripts": [
+        "../src/assets/modernizr.js",
+        "../node_modules/picturefill/dist/picturefill.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

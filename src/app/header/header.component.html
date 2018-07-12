@@ -1,5 +1,12 @@
 <a class="logo" href="javascript:void(0)">
-  <img class="logo-icon" src="assets/img/brand/logo.png" alt="logo">
+  <picture>
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+    <source srcset="assets/img/brand/logo.svg" type="image/svg+xml">
+    <source srcset="assets/img/brand/logo.webp" type="image/webp">
+    <source srcset="assets/img/brand/logo.png" type="image/png">
+    <!--[if IE 9]></video><![endif]-->
+    <img class="logo-icon" srcset="assets/img/brand/logo.png" alt="logo">
+  </picture>
   <span class="logo-name"></span>
 </a>
 <nav class="nav">
