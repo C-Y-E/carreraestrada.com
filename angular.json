@@ -24,12 +24,17 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              { "glob": "**/*", "input": "src/icons", "output": "./" }
             ],
             "styles": [
+              "node_modules/normalize.css/normalize.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/modernizr.js",
+              "node_modules/picturefill/dist/picturefill.js"
+            ]
           },
           "configurations": {
             "production": {

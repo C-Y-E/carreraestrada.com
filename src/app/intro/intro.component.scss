@@ -1,8 +1,13 @@
 @import '../../sass/variables';
 @import '../../sass/colors';
- :host {
+.no-webp :host {
+    background-image: url('/assets/img/bk/intro.jpeg');  
+}
+.webp :host {
+    background-image: url('/assets/img/bk/intro.webp');  
+}
+:host {
     align-items: center;
-    background-image: url('/assets/img/bk/intro.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

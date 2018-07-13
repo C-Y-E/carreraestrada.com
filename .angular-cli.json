@@ -25,7 +25,7 @@
         "styles.scss"
       ],
       "scripts": [
-        "../src/assets/modernizr.js",
+        "modernizr.js",
         "../node_modules/picturefill/dist/picturefill.js"
       ],
       "environmentSource": "environments/environment.ts",

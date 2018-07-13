@@ -10,6 +10,9 @@
     margin: 0 auto;
     text-align: center;
     article {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -47,31 +50,52 @@
         }
     }
     .poscye {
-        background-image: url('https://squareup.com/assets/pages/blog/hero.medium-5d2608ae71fb1fd0bf8f98b94c13e6bdfdd9496c01cea7dc3ad7625b72422c36.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
         &::before {
             background: $matching-1;
         }
     }
     .fe {
-        background-image: url('https://images.pexels.com/photos/192136/pexels-photo-192136.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
         &::before {
             background: $spot-1;
         }
     }
     .ss {
-        background-image: url('/assets/img/bk/sales.webp');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
         &::before {
             background: $spot-1;
         }
+    }
+    .ci {
+        &::before {
+            background: $primary;
+        }
+    }
+}
+.no-webp :host {
+    .poscye {
+        background-image: url('/assets/img/bk/poscyebk.png');
+    }
+    .fe {
+        background-image: url('/assets/img/bk/fe.jpg');
+    }
+    .ss {
+        background-image: url('/assets/img/bk/sales.jpg');
+    }
+    .ci {
+        background-image: url('/assets/img/bk/ci.jpg');
+    }
+}
+.webp :host{
+    .poscye {
+        background-image: url('/assets/img/bk/poscyebk.webp');
+    }
+    .fe {
+        background-image: url('/assets/img/bk/fe.webp');
+    }
+    .ss {
+        background-image: url('/assets/img/bk/sales.webp');
+    }
+    .ci {
+        background-image: url('/assets/img/bk/ci.webp');
     }
 }
 @media (min-width: 425px) {
@@ -88,6 +112,9 @@
         }
         .ss {
             width: 40%;
+        }
+        .ci {
+            width: 60%;
         }
     }
 }
