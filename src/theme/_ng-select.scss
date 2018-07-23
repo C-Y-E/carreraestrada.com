@@ -1,0 +1,28 @@
+.ng-select.poscye-business {
+    min-height: 40px;
+    margin: 0 auto;
+    max-width: 300px;
+}
+.ng-select.poscye-business .ng-select-container  {
+    background: rgba(57, 63, 72, 0.1);
+    border: 1px solid $light;
+    height: 40px;
+}
+.ng-select .ng-select-container .ng-value-container .ng-placeholder {
+    color: $light;
+}
+.ng-dropdown-panel {
+    background-color: transparent;
+    border: 1px solid $light;
+}
+.ng-dropdown-panel.ng-select-bottom {
+    border-top-color: $light;
+}
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option {
+    background-color: rgba(57, 63, 72, 0.1);
+    color: $light;
+}
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-marked {
+    background-color: #ebf5ff;
+    color: $header-font-color-1;
+}

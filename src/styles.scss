@@ -1,48 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
-@import 'sass/variables';
-html,
-body {
-  background-color: $light;
-  border: 0;
-  color: $black;
-  font: {
-    family: $font-main;
-    size: 16px;
-  }
-  margin: 0;
-  padding: 0;
-  position: relative;
-  text-rendering: optimizeLegibility;
-  vertical-align: baseline;
-}
+/*
+    You can add global styles to this file, and also import other style files.
+    Theme variables, must be included before the libraries to allow overriding defaults.
+*/
 
-a {
-  transition: color .2s ease-in-out;
-  text-decoration: none;
-  color: inherit;
-}
-@media (max-width: 575.98px) {
-  .container {
-      max-width: 100%;
-  }
-}
-@media (min-width: 576px){
-  .container {
-      max-width: 540px;
-  }
-}
-@media (min-width: 768px){
-  .container {
-      max-width: 720px;
-  }
-}
-@media (min-width: 992px){
-  .container {
-      max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-      max-width: 1140px;
-  }
-}
+@import "theme/variables";
+
+// 3rd party libraries
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@import "~primer-core/index";
+@import "~primer-alerts/index";
+@import "~primer-avatars/index";
+@import "~primer-buttons/index";
+@import "~primer-forms/index";
+
+
+// Theme customization
+@import "theme/theme";

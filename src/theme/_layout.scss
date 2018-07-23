@@ -1,0 +1,35 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+@media only screen and (max-width: 575.98px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 980px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .container {
+        width: 1080px;
+    }
+}

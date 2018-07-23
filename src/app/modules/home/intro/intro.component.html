@@ -1,0 +1,10 @@
+<particles [style]="pStyle" [width]="width" [height]="height" [params]="pParams"></particles>
+<div class="container inner">
+    <h1>Poscye se adapta a todo tipo de negocio.</h1>
+    <!-- <p>Nuestros productos se basan en calidad y experiencia.</p> -->
+    <ng-select class="poscye-business"
+                placeholder="Escoja Su Tipo De Negocio"
+                [items]="business"
+                [(ngModel)]="selected">
+    </ng-select>
+</div>

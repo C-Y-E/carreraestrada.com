@@ -1,28 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ParticlesModule } from 'angular-particle';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { IntroComponent } from './intro/intro.component';
-import { ProductsComponent } from './products/products.component';
-import { ServicesComponent } from './services/services.component';
-import { AboutComponent } from './about/about.component';
+import { CoreModule } from './core/core.module';
+import { AppRoutingModule } from './app.routing.module';
+import { HomeModule } from './modules/home/home.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    IntroComponent,
-    ProductsComponent,
-    ServicesComponent,
-    AboutComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    ParticlesModule
+    CoreModule,
+    AppRoutingModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

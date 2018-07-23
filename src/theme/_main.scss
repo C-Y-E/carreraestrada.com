@@ -1,0 +1,36 @@
+html,
+body {
+  background-color: $light;
+  border: 0;
+  color: $black;
+  font: {
+    family: $font-main;
+    size: 16px;
+  }
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-rendering: optimizeLegibility;
+  vertical-align: baseline;
+}
+
+a {
+  transition: color .2s ease-in-out;
+  text-decoration: none;
+  color: inherit;
+}
+
+.fixed {
+  background: $header-font-color-2;
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  .nav {
+      &-link {
+          &::after {
+              background: $header-font-color-3;
+          }
+          &:hover {
+              color: $header-font-color-3;
+          }
+      }
+  }
+}
